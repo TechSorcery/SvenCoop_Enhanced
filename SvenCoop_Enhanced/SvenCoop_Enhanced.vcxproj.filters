@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="core">
+      <UniqueIdentifier>{a1a1a1a1-0001-0001-0001-000000000001}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game">
+      <UniqueIdentifier>{a1a1a1a1-0002-0002-0002-000000000002}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hooks">
+      <UniqueIdentifier>{a1a1a1a1-0003-0003-0003-000000000003}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features">
+      <UniqueIdentifier>{a1a1a1a1-0004-0004-0004-000000000004}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\bhop">
+      <UniqueIdentifier>{a1a1a1a1-0005-0005-0005-000000000005}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\aimbot">
+      <UniqueIdentifier>{a1a1a1a1-0006-0006-0006-000000000006}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\esp">
+      <UniqueIdentifier>{a1a1a1a1-0009-0009-0009-000000000009}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\triggerbot">
+      <UniqueIdentifier>{a1a1a1a1-0010-0010-0010-000000000010}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui">
+      <UniqueIdentifier>{a1a1a1a1-0007-0007-0007-000000000007}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared">
+      <UniqueIdentifier>{a1a1a1a1-0008-0008-0008-000000000008}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="external">
+      <UniqueIdentifier>{d01ca57a-2d3d-49ac-8244-45f7483cde95}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\dllmain.cpp" />
+    <ClCompile Include="src\core\logging.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\hooking.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\entity_utils.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\game_interfaces.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hooks\hk_createmove.cpp">
+      <Filter>hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\aimbot\aimbot.cpp">
+      <Filter>features\aimbot</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\bhop\bunnyhop.cpp">
+      <Filter>features\bhop</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\esp\esp.cpp">
+      <Filter>features\esp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\triggerbot\triggerbot.cpp">
+      <Filter>features\triggerbot</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\menu_render.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\menu_state.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\minhook\src\buffer.c">
+      <Filter>external</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\minhook\src\hook.c">
+      <Filter>external</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\minhook\src\trampoline.c">
+      <Filter>external</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\minhook\src\hde\hde32.c">
+      <Filter>external</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shared\game_state.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hooks\hk_playermove.cpp">
+      <Filter>hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hooks\hk_hud_redraw.cpp">
+      <Filter>hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hooks\hk_mouse.cpp">
+      <Filter>hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hooks\hk_postruncmd.cpp">
+      <Filter>hooks</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\core\logging.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\hooking.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\sdk_structs.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\game_interfaces.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\entity_utils.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hooks\hk_createmove.h">
+      <Filter>hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\aimbot\aimbot.h">
+      <Filter>features\aimbot</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\bhop\bunnyhop.h">
+      <Filter>features\bhop</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\esp\esp.h">
+      <Filter>features\esp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\triggerbot\triggerbot.h">
+      <Filter>features\triggerbot</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shared\game_state.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ui\menu_render.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ui\menu_state.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hooks\hk_playermove.h">
+      <Filter>hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hooks\hk_hud_redraw.h">
+      <Filter>hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hooks\hk_mouse.h">
+      <Filter>hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hooks\hk_postruncmd.h">
+      <Filter>hooks</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
